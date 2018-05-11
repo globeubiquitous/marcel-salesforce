@@ -1,0 +1,56 @@
+.App {
+  .App-header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    .sl-header {
+      background: #313540;
+
+      .slds-grid {
+        .slds-has-flexi-truncate {
+          color: #dedfe1;
+          display: flex;
+          align-items: center;
+        }
+      }
+
+      .header-right {
+        display: flex;
+        align-items: center;
+  
+        .header-right-sub {
+          padding: 0 30px;
+
+          &.header-right-title {
+            border-right: 2px solid #3b3f49;
+
+            .upper {
+              color: #dedfe1;
+              font-size: 14px;
+            }
+            .bottom {
+              color: #39bc7e;
+            }
+          }
+          &.header-right-comments {
+            display: flex;
+            align-items: center;
+
+            .message-icon {
+              margin-right: 20px;
+            }
+
+            .comments {
+              color: #434750;
+            }
+          }
+          &.header-right-action {
+            margin-left: 30px;
+            padding-right: 0;
+          }
+        }
+      }
+    }
+  }
+}

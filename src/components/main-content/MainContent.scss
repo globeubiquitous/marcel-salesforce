@@ -1,0 +1,12 @@
+.App {
+  .main-content {
+    position: absolute;
+    left: 50px;
+    top: 74px;
+    height: calc(100vh - 74px);
+
+    .main-content-items {
+      height: 100%;
+    }
+  }
+}

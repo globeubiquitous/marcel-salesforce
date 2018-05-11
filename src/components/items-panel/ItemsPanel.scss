@@ -1,0 +1,33 @@
+.App {
+  .main-content {
+    .items-panel {
+      display: flex;
+      width: 400px;
+      height: 100%;
+
+      & > div {
+        height: 100%;
+      }
+
+      .list {
+        width: 200px;
+        border-right: 1px solid #eaecef;
+
+        .item {
+          border-bottom: 1px solid #eff1f4;
+
+          & > div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 15px;
+
+            &.active {
+              background-color: #c6fae3;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.App {
+  .navbar {
+    position: absolute;
+    left: 0;
+    top: 74px;
+
+    & > div {
+      height: calc(100vh - 74px);
+    }
+  }
+}
