@@ -1,0 +1,53 @@
+.App {
+  .page-navbar {
+    position: absolute;
+    width: calc(100vw - 50px);
+    left: 50px;
+    top: 74px;
+    border-bottom: 2px solid #e3e6ea;
+
+    .product-navbar {
+      display: flex;
+      justify-content: space-between;
+
+      .catalog-navbar {
+        display: flex;
+        align-items: center;
+        margin: 10px;
+  
+        .catalog-label {
+          margin-right: 30px;
+        }
+  
+        Button:link {
+          background: #e9edf0;
+        }
+  
+        Button:visited {
+          background: #008979;
+        };
+  
+        Button:hover {
+          background: #008979;
+        };
+  
+        Button:focus {
+          background: #008979;
+        }
+      }
+  
+      .filter-navbar {
+        display: flex;
+        align-items: center;
+  
+        .filter-title {
+          margin-right: 20px;
+        }
+
+        .filter-icon {
+          margin-right: 40px;
+        }
+      }  
+    }
+  }
+}

@@ -31,16 +31,51 @@ class ItemsPanel extends Component {
     const itemsList = items.map(item => (
       <div key={item.id} className="item">
         <div className={this.getActiveClassName(item)}>
-          <span className="item-title">{item.title}</span>
-          <a className="item-expander" onClick={() => {this.selectItem(item)}}>
-            <IconSettings iconPath="/icons">
-              <Icon
-                category="utility"
-                name="chevronright"
-                size="small"
-              />
-            </IconSettings>
-          </a>
+          <div className="left-sub sub">
+            {item.price && 
+              <fieldset className="slds-form-element">
+                <div className="slds-form-element__control">
+                  <span className="slds-radio">
+                    <input type="radio" id={item.id} name="options" value="radio-23" onClick={() => {this.selectItem(item)}} />
+                    <label className="slds-radio__label" htmlFor={item.id}>
+                      <span className="slds-radio_faux"></span>
+                      <span className="slds-form-element__label">{item.title}</span>
+                    </label>
+                  </span>
+                </div>
+              </fieldset>
+            }
+            {!item.price &&
+              <span>{item.title}</span>
+            }
+          </div>
+          <div className="right-sub sub">
+            {item.price ? (
+              <div>
+                <span className="right-sub-price">{item.price}</span>
+                <a className="add-icon">
+                  <IconSettings iconPath="/icons">
+                    <Icon
+                      category="utility"
+                      name="add"
+                      size="small"
+                    />
+                  </IconSettings>
+                </a>
+              </div>
+            ) : (
+              <a className="item-expander" onClick={() => {this.selectItem(item)}}>
+                <IconSettings iconPath="/icons">
+                  <Icon
+                    category="utility"
+                    name="chevronright"
+                    size="small"
+                  />
+                </IconSettings>
+              </a>
+            )
+            }
+          </div>
         </div>
       </div>
     ));

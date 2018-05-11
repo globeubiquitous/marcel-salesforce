@@ -2,7 +2,7 @@
   .main-content {
     .items-panel {
       display: flex;
-      width: 400px;
+      width: 500px;
       height: 100%;
 
       & > div {
@@ -10,7 +10,7 @@
       }
 
       .list {
-        width: 200px;
+        width: 250px;
         border-right: 1px solid #eaecef;
 
         .item {
@@ -20,10 +20,45 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 10px 15px;
+            
+
+            .sub {
+              & > div {
+                display: flex;
+                align-items: center;
+              }
+
+              &.left-sub {
+                padding: 10px 15px;
+              }
+              
+              &.right-sub {
+                & > div {
+                  justify-content: flex-end;
+                }
+                
+                .right-sub-price {
+                  padding: 10px 15px;
+                }
+                .add-icon {
+                  visibility: hidden;
+                  background: #7cfcc1;
+                  display: block;
+                  height: 39px;
+                  display: flex;
+                  align-items: center;
+                }
+              }
+            }
 
             &.active {
               background-color: #c6fae3;
+
+              .right-sub {
+                .add-icon {
+                  visibility: visible;
+                }
+              }
             }
           }
         }

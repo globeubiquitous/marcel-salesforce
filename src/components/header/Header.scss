@@ -2,7 +2,7 @@
   .App-header {
     position: absolute;
     top: 0;
-    width: 100%;
+    width: 100vw;
 
     .sl-header {
       background: #313540;
@@ -23,7 +23,7 @@
           padding: 0 30px;
 
           &.header-right-title {
-            border-right: 2px solid #3b3f49;
+            border-right: 2px solid #929aad;
 
             .upper {
               color: #dedfe1;
@@ -42,7 +42,7 @@
             }
 
             .comments {
-              color: #434750;
+              color: #dedfe1;
             }
           }
           &.header-right-action {
