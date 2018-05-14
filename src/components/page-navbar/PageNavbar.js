@@ -16,13 +16,13 @@ class PageNavbar extends Component {
       <div className="product-navbar">
           <div className="catalog-navbar">
             <div className="catalog-label">
-              <span>Product catalog</span>
+              <strong><span>Product catalog</span></strong>
             </div>
             <div className="btn-group">
-              <ButtonGroup>
-                <Button label="Manual" />
-                <Button label="Recommendation" />
-              </ButtonGroup>
+              <div className="slds-button-group">
+                <Button className="slds-button" label="Manual" />
+                <Button className="slds-button" label="Recommendation" />
+              </div>
             </div>
           </div>
 

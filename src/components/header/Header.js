@@ -9,7 +9,7 @@ class Header extends Component {
 			<div className="header-right">
 		    <div className="header-right-sub header-right-title">
           <div className="sub upper">
-            <span>Version1 (Draft)</span>
+            <span>Version 1 (draft)</span>
           </div>
           <div className="sub bottom">
             <span>save as new version</span>

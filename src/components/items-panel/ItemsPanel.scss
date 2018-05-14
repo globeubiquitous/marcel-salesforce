@@ -2,7 +2,7 @@
   .main-content {
     .items-panel {
       display: flex;
-      width: 500px;
+      width: 600px;
       height: 100%;
 
       & > div {
@@ -10,26 +10,34 @@
       }
 
       .list {
-        width: 250px;
+        width: 300px;
         border-right: 1px solid #eaecef;
 
-        .item {
+        .item-wrapper {
           border-bottom: 1px solid #eff1f4;
 
           & > div {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            
 
             .sub {
+
               & > div {
                 display: flex;
                 align-items: center;
               }
 
               &.left-sub {
-                padding: 10px 15px;
+                padding: 10px 0;
+
+                .item-title {
+                  color: #7d8d96;
+                }
+
+                .item-title-service {
+                  color: #5f707d;
+                }
               }
               
               &.right-sub {
@@ -39,6 +47,7 @@
                 
                 .right-sub-price {
                   padding: 10px 15px;
+                  color: #5f707d;
                 }
                 .add-icon {
                   visibility: hidden;
@@ -49,6 +58,10 @@
                   align-items: center;
                 }
               }
+            }
+
+            .item {
+              padding: 0 20px;
             }
 
             &.active {

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import ItemsPanel from '../items-panel/ItemsPanel';
+import { withRouter } from 'react-router-dom';
 
 import './MainContent.css';
 
@@ -20,4 +21,4 @@ MainContent.propTypes = {
   content: PropTypes.any
 };
 
-export default MainContent;
+export default withRouter(MainContent);

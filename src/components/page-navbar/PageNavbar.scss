@@ -3,36 +3,48 @@
     position: absolute;
     width: calc(100vw - 50px);
     left: 50px;
-    top: 74px;
-    border-bottom: 2px solid #e3e6ea;
+    top: 74px;    
 
     .product-navbar {
       display: flex;
+      margin: 0 20px;
       justify-content: space-between;
+      border-bottom: 1px solid #5f707d;
 
       .catalog-navbar {
         display: flex;
         align-items: center;
-        margin: 10px;
-  
+        margin: 10px 0;
+
         .catalog-label {
           margin-right: 30px;
+          font-size: 16px;
+          color: #8c98a1;
+        }
+
+        .slds-button {
+          background: #e9edf0;
+          color: #cdd1d6;
         }
   
         Button:link {
           background: #e9edf0;
+          color: #cdd1d6;
         }
   
         Button:visited {
           background: #008979;
+          color: white;
         };
   
         Button:hover {
           background: #008979;
+          color: white;
         };
   
         Button:focus {
           background: #008979;
+          color: white;
         }
       }
   
@@ -42,6 +54,8 @@
   
         .filter-title {
           margin-right: 20px;
+          color: #7d8d96;
+          font-size: 14px;
         }
 
         .filter-icon {
